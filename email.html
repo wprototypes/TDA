@@ -34,16 +34,7 @@
                 <div class="journal-suggestion wiley">
                         <h2><a target="_blank" href="{{this.links.homepage}}">{{this.journalTitle}}</a></h2>
                         <div class="journal-pills">
-                            {{#if_eq this.oa "supports"}}<span class="oa-hybrid"><a target="_blank" href="https://authorservices.wiley.com/author-resources/Journal-Authors/open-access/hybrid-open-access.html">Supports Open Access</a></span>{{/if_eq}}
-                            {{#if_eq this.oa "full"}} 
-                                {{#if_eq this.isHindawi true}} 
-                                 <span class="oa-full"><a target="_blank" href="https://www.hindawi.com/journals/ijecol/apc/#waivers">Open Access</a></span>
-                                {{/if_eq}}
-                                {{#if_eq this.isHindawi false}} 
-                                 <span class="oa-full"><a target="_blank" href="https://authorservices.wiley.com/open-research/open-access/browse-journals.html">Open Access</a></span>
-                                {{/if_eq}}
-                            {{/if_eq}}
-                            {{#if this.formatFree}}<span class="format">{{this.oa}}</span>{{/if}}
+                            {{#if_eq this.oa "Open Access"}}<span class="format">{{this.oa}}</span>{{/if_eq}}
                         </div>
                     <div class="details">
                         <div class="left-details">

@@ -19,7 +19,7 @@ config = {
                     "publishedSince":"1995",
                     "description":"Published eight times per year by the Asian Pacific Society of Nephrology, this journal has a special emphasis on the needs of clinical nephrologists and those in developing countries. The journal publishes reviews and papers of international interest describing original research concerned with clinical and experimental aspects of nephrology.",
                     "oa":"Subscription or Open Access", 
-                    "formatFree":false,
+                    "formatFree":true,
                     "metrics":{ 
                         "impact":"2.506", 
                         "SJR":"0.752",

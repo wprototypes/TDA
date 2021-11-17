@@ -60,7 +60,7 @@ h2 .journal-pills span{
     width:inherit;
 }
 #emailBody p.journal-description{
-    margin:0.5em 0;
+    margin:2rem 0;
 }
 .arrow{
     font-family:'Arial', sans-serif;
@@ -121,7 +121,7 @@ p{
 }
 .journal-suggestion{
     border:1px solid #959595;
-    padding:20px 5%;
+    padding:40px 5%;
     position: relative;
 
 }
@@ -131,7 +131,7 @@ p{
 .journal-suggestion h2{
     font-size:1.5em;
     font-weight:600;
-    margin:0 0 0.5em 0;
+    margin:0;
 }
 .journal-suggestion h2 a{
     /* color:#2e2e2e; */
@@ -301,6 +301,9 @@ button:hover{
 
 .icon{
     color:#0092d1;
+    position: relative;
+    right:-2px;
+    top:2px;
 }
 
 .footeraddress{
@@ -314,11 +317,12 @@ button:hover{
 .rightbtn{
     position: absolute;
     right: 16px;
-    top: 20px;
+    top: 40px;
 }
 
 .icon{
     font-size:10px;
+    font-weight: 900;
 }
 
 .greentxt{

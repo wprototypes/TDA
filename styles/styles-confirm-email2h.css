@@ -42,6 +42,7 @@ body{
 body{
     color:#1c1d1e;
     margin:0;
+    font-size:14px;
 }
 .nav-wrap{
     border-bottom:1px solid #ddd;
@@ -67,6 +68,8 @@ body{
     color:#0092d1;
 }
 p{
+    line-height: 24px;
+    font-size: 1rem;
     margin:1.5em 0;
 }
 .intro{

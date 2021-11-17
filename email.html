@@ -20,7 +20,7 @@
         <div id="emailBody">
             <div class="body-wrap">
                 <div class="intro">
-                    <p>Hi {{authorName}}</p>
+                    <p>Hi {{authorName}},</p>
                     <p>Based on analysis of your recent submission, "{{manuscriptTitle}}" to {{feederJournal}}, we have identified alternate Wiley journals that could be a good fit for your research. If you are interested in transferring your manuscript, Wiley's Transfer Desk service can help.
                     <p><strong>How does it work?</strong></p>    
                     <ul>
@@ -43,7 +43,7 @@
                                  <span class="oa-full"><a target="_blank" href="https://authorservices.wiley.com/open-research/open-access/browse-journals.html">Open Access</a></span>
                                 {{/if_eq}}
                             {{/if_eq}}
-                            {{#if this.formatFree}}<span class="format">Format-free submission</span>{{/if}}
+                            {{#if this.formatFree}}<span class="format">{{this.oa}}</span>{{/if}}
                         </div>
                     <div class="details">
                         <div class="left-details">
@@ -74,14 +74,14 @@
                     {{#if this.metrics}}
                     <div class="journal-stats">
                         
-                            {{#if this.metrics.impact}}<div><span>Impact factor</span> <span>{{this.metrics.impact}}</span></div>  {{/if}}
-                            {{#if this.metrics.SJR}}<div><span>SJR<span class="icon">&#9432;</span></span> <span>{{this.metrics.SJR}}</span></div>  {{/if}}
-                            {{#if this.metrics.H-Index}}<div><span>H-Index</span> <span>{{this.metrics.H-Index}}</span></div>  {{/if}}
-                            {{#if this.metrics.acceptanceRate}}<div><span>Acceptance rate</span> <span>{{this.metrics.acceptanceRate}}</span></div>  {{/if}}
-                            {{#if this.oa}}<div><span>Publishing Options</span> <span class="maxlimit">{{this.oa}}<span class="icon">&#9432;</span></span></div>  {{/if}}
-                            {{#if this.formatFree}}<div><span>Submission format</span> <span class="greentxt">Free Format<span class="icon">&#9432;</span></span></div>  {{/if}}
-                            {{#if this.metrics.submissionToFirstDecision}}<div><span>Submission to first decision</span> <span>{{this.metrics.submissionToFirstDecision}} Days</span></div>  {{/if}}
-                            {{#if this.metrics.acceptanceToPublication}}<div><span>Acceptance to publication</span><span>{{this.metrics.acceptanceToPublication}} Days</span></div>  {{/if}}
+                        <div>{{#if this.metrics.impact}}<span>Impact factor</span> <span>{{this.metrics.impact}}</span>  {{/if}}</div>
+                        <div>{{#if this.metrics.SJR}}<span>SJR<span class="icon"><img src="img/icon.png"/></span></span> <span>{{this.metrics.SJR}}</span> {{/if}}</div>
+                        <div>{{#if this.metrics.H-Index}}<span>H-Index</span> <span>{{this.metrics.H-Index}}</span> {{/if}}</div>
+                        <div>{{#if this.metrics.acceptanceRate}}<span>Acceptance rate</span> <span>{{this.metrics.acceptanceRate}}</span>  {{/if}}</div>
+                        <div>{{#if this.oa}}<span>Publishing Options</span> <span class="maxlimit">{{this.oa}}<span class="icon"><img src="img/icon.png"/></span></span>  {{/if}}</div>
+                        <div>{{#if this.formatFree}}<span>Submission format</span> <span class="greentxt">Free Format<span class="icon"><img src="img/icon.png"/></span></span>  {{/if}}</div>
+                        <div>{{#if this.metrics.submissionToFirstDecision}}<span>Submission to first decision</span> <span>{{this.metrics.submissionToFirstDecision}} Days</span>  {{/if}}</div>
+                        <div>{{#if this.metrics.acceptanceToPublication}}<span>Acceptance to publication</span><span>{{this.metrics.acceptanceToPublication}} Days</span> {{/if}}</div>
                         
                     </div>
                     {{/if}}
